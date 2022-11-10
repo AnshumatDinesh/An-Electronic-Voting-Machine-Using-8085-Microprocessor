@@ -18,7 +18,7 @@ MOV M,B
 INR C
 DCR D
 JNZ loop_init
-CALL DELAY
+CALL SECURITY
 -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 
 -----------------EMERGENCY INTERRUPT---------------
@@ -67,7 +67,7 @@ RNZ
 INX H
 DCR D
 JNZ wait1
-JMP COUNT
+JMP DELAY
 -x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
 -----------------COUNT-----------------------------
 This subroutine will count the votes
